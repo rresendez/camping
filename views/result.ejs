@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Results list</h1>
+<ul>
+  <%
+ var count=1;
+  transactions.forEach(function(item){ %>
+    <h3>Entry number <%= count %></h3>
+    <li>Description: <%= item.description %></li>
+    <li>Category: <%= item.category %></li>
+    <li>Priority: <%= item.priority %></li></br>
+    <%
+   count=count+1;
+  }); %>
+  </ul>
+  <a href="http://localhost:3000/">Home</a>
+</body>
+</html>
